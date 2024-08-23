@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Poppins, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    color: black;
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+    text-decoration: none;
+}
+
+span {
+    color: skyblue;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    padding: 2rem 9%;
+    width: 100%;
+}
+
+.name h2 {
+    font-size: 4vw;
+    text-align: center;
+}
+
+.logo {
+    font-size: 3rem;
+    color: red;
+    font-weight: 600;
+    cursor: default;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.logo img {
+    width: 10rem;
+    z-index: 101;
+}
+
+.navbar a {
+    font-size: 2rem;
+    color: #FEFAE0;
+    margin-left: 2.5rem;
+    text-decoration: none;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #B99470;
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("../img/coding\ gif.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.home-section h1 {
+    color: red;
+    font-weight: 600;
+    font-size: 5rem;
+}
+
+.home-section .span1 {
+    color: skyblue;
+}
+
+.home-section h3 {
+    color: red;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: skyblue;
+    border-radius: 4rem;
+    box-shadow: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: red;
+    letter-spacing: 0.1rem;
+    transition: 0.5s ease;
+    margin-top: 0.625rem;
+}
+
+.btn:hover {
+    box-shadow: 0 0 1rem skyblue;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: red;
+}
+
+.about-img img {
+    width: 20vw;
+    border-radius: 1.25rem;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(1.4rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.heading {
+    justify-content: center;
+    text-align: center;
+    font-size: 4.5rem;
+    color: skyblue;
+    margin-bottom: 2rem;
+}
+
+.about-content h3 {
+    font-size: 1.5rem;
+    margin: 2rem 0 3rem;
+    color: skyblue;
+}
+
+.skills {
+    background-color: skyblue;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: red;
+    width: 21.25rem;
+    box-shadow: 0 0.3125rem 1.5625rem rgba(1, 1, 1, 0.5);
+    border-radius: 0.625rem;
+    padding: 1.5625rem;
+    margin: 0.9375rem;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: white;
+    font-size: 8rem;
+    text-align: center;
+}
+
+.info h3 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0.625rem;
+    text-decoration: none;
+}
+
+.info {
+    text-align: center;
+}
+
+.info p {
+    color: #FEFAE0;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.info a {
+    text-decoration: none;
+    color: #FEFAE0;
+}
+
+.project {
+    background-color: red;
+}
+
+.project .content {
+    margin-top: 1.875rem;
+}
+
+.project-card {
+    background-color: skyblue;
+    border: 0.0625rem solid skyblue;
+    min-height: 14rem;
+    width: 50rem;
+    overflow: hidden;
+    border-radius: 0.625rem;
+    margin: 1.25rem;
+    transition: 0.7s ease;
+}
+
+.project-image img {
+    width: 100%;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+    opacity: 0.8;
+}
+
+.project-info {
+    padding: 1rem;
+}
+
+.project-category {
+    font-size: 0.8rem;
+    color: red;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin-top: 0.625rem;
+}
+
+.project-details {
+    display: flex;
+    font-size: 0.75rem;
+    color: red;
+}
+
+.more-details {
+    text-decoration: none;
+    color: red;
+}
+
+.contact {
+    background-color: skyblue;
+}
+
+.footer {
+    background-color: red;
+    color: skyblue;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: skyblue;
+    cursor: default;
+}
+
+.footer-title span:hover {
+    color: #5F6F52;
+    cursor: default;
+}
+
+.footer .social-icons a {
+    font-size: 1.3rem;
+    padding: 0 0.75rem 0 0;
+}
+
+.yt,
+.tw,
+.ig,
+.gh {
+    color: skyblue;
+}
+
+.yt:hover {
+    color: crimson;
+}
+
+.tw:hover {
+    color: rgb(6, 255, 255);
+}
+
+.ig:hover {
+    color: crimson;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+svg {
+    font-family: "Bebas Neue", sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+svg text {
+    animation: stroke 4s infinite alternate;
+    stroke-width: 0.125rem;
+    stroke: rgb(137, 207, 235);
+    font-size: 3.875rem;
+}
+
+@keyframes stroke {
+    0% {
+        fill: rgba(112, 254, 23, 0);
+        stroke: rgba(137, 207, 235);
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+        stroke-width: 0.125rem;
+    }
+
+    70% {
+        fill: rgba(112, 254, 23, 0);
+        stroke: rgba(137, 207, 235);
+    }
+
+    80% {
+        fill: rgba(112, 254, 23, 0);
+        stroke: rgba(137, 207, 235);
+        stroke-width: 0.1875rem;
+    }
+
+    100% {
+        fill: rgba(137, 207, 235);
+        stroke: rgba(60, 232, 47, 0);
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+        stroke-width: 0;
+    }
+}
+
+.wrapper {
+    background-color: red;
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 1200px) {
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    .navbar a {
+        font-size: 1.8rem;
+    }
+
+    .home-section h1 {
+        font-size: 4.5rem;
+    }
+
+    .home-section h3 {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        margin: 0.8rem 0;
+    }
+
+    .home-section
